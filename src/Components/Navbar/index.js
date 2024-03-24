@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import Button from '../Common/Button';
 
 const Navbar = () => {
 	const [isClick, setIsClick] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
 	return (
 		<nav className='bg-azul relative overflow-auto'>
-			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-0'>
+			<div className='max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8 sticky top-0'>
 				<div className='flex items-center justify-between h-16'>
 					<div className='flex items-center'>
 						<div className='flex-shrink-0'>
@@ -26,16 +27,17 @@ const Navbar = () => {
 						</div>
 					</div>
 					<div className='hidden md:block'>
-						<div className='ml-4 flex items-center space-x-4'>
+						<div className='ml-4 flex items-center space-x-10'>
 							<a href='/' className='text-blanco hover:underline'>
-								Algo
+								Sobre DonáClick
 							</a>
 							<a href='/' className='text-blanco hover:underline'>
-								Algo 2
+								Conocé el programa
 							</a>
 							<a href='/' className='text-blanco hover:underline'>
-								Algo 3
+								ONG&apos;s
 							</a>
+							<Button bgColor='naranja'>Ingresar</Button>
 						</div>
 					</div>
 					<div className='md:hidden flex items-center'>

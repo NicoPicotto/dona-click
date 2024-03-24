@@ -1,9 +1,9 @@
 'use client';
-const Button = ({ children, name }) => {
+const Button = ({ children, name, bgColor }) => {
 	return (
 		<button
 			aria-label={name}
-			className='bg-azul hover:bg-[var(--brand-2)] text-blanco px-4 py-2 rounded transition-colors'
+			className={`bg-${bgColor} hover:bg-opacity-90 text-blanco px-4 py-2 rounded transition-colors`}
 		>
 			{children}
 		</button>
