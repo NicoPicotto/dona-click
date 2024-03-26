@@ -11,7 +11,11 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='bg-azul relative overflow-auto'>
+		<nav
+			className={`bg-azul ${
+				isClick ? 'fixed' : 'relative'
+			} overflow-auto w-full`}
+		>
 			<div className='max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8 sticky top-0'>
 				<div className='flex items-center justify-between h-16'>
 					<div className='flex items-center'>
